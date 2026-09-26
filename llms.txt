@@ -1,8 +1,8 @@
-# fb.css
+# forbaska.css
 
-> Shared CSS design system for small single-page tools. Plain CSS, no build step, `fb-` namespace, design tokens as CSS custom properties, light/dark follows system. Rough, editorial, function-first look: hard borders, hard shadows, minimal radius, mono metadata. Not SaaS/Tailwind/Bootstrap style.
+> Shared CSS design system for small single-page tools. Plain CSS, no build step, `forbaska-` namespace, design tokens as CSS custom properties, light/dark follows system. Rough, editorial, function-first look: hard borders, hard shadows, minimal radius, mono metadata. Not SaaS/Tailwind/Bootstrap style.
 
-Include with: `<link rel="stylesheet" href="https://forbaska.github.io/css/v1/fb.css">`
+Include with: `<link rel="stylesheet" href="https://forbaska.github.io/css/v1/forbaska.css">`
 
 Do not redesign the visual language into generic Tailwind/SaaS conventions. Preserve the rough, editorial, production-oriented character even when implementing standard UI components.
 
@@ -10,4 +10,4 @@ Do not redesign the visual language into generic Tailwind/SaaS conventions. Pres
 
 - [Full reference](https://forbaska.github.io/css/llms-full.txt): design principles, all tokens, all classes with HTML examples, do/don't. Read this before writing any UI.
 - [Live examples](https://forbaska.github.io/css/): every component rendered
-- [Stylesheet](https://forbaska.github.io/css/v1/fb.css): source of truth for tokens and classes
+- [Stylesheet](https://forbaska.github.io/css/v1/forbaska.css): source of truth for tokens and classes

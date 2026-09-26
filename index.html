@@ -4,112 +4,112 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>fb.css</title>
-  <link rel="stylesheet" href="v1/fb.css">
+  <title>forbaska.css</title>
+  <link rel="stylesheet" href="v1/forbaska.css">
   <style>
-    .swatch { height: 3.5rem; border: var(--fb-border-width-strong) solid var(--fb-color-border); }
-    pre { margin: 0; padding: var(--fb-space-3); overflow-x: auto; font-family: var(--fb-font-mono); font-size: var(--fb-font-size-sm);
-      background: var(--fb-color-surface-strong); border: var(--fb-border-width) solid var(--fb-color-border-soft); }
-    .demo { padding: var(--fb-space-4); border: var(--fb-border-width-strong) dashed var(--fb-color-border-soft); }
+    .swatch { height: 3.5rem; border: var(--forbaska-border-width-strong) solid var(--forbaska-color-border); }
+    pre { margin: 0; padding: var(--forbaska-space-3); overflow-x: auto; font-family: var(--forbaska-font-mono); font-size: var(--forbaska-font-size-sm);
+      background: var(--forbaska-color-surface-strong); border: var(--forbaska-border-width) solid var(--forbaska-color-border-soft); }
+    .demo { padding: var(--forbaska-space-4); border: var(--forbaska-border-width-strong) dashed var(--forbaska-color-border-soft); }
   </style>
 </head>
 <body>
-  <header class="fb-header">
-    <div class="fb-container fb-row fb-row--between">
-      <strong>fb.css</strong>
-      <span class="fb-row">
-        <a class="fb-meta" href="llms.txt">llms.txt</a>
-        <a class="fb-meta" href="llms-full.txt">llms-full.txt</a>
-        <a class="fb-meta" href="v1/fb.css">v1/fb.css</a>
+  <header class="forbaska-header">
+    <div class="forbaska-container forbaska-row forbaska-row--between">
+      <strong>forbaska.css</strong>
+      <span class="forbaska-row">
+        <a class="forbaska-meta" href="llms.txt">llms.txt</a>
+        <a class="forbaska-meta" href="llms-full.txt">llms-full.txt</a>
+        <a class="forbaska-meta" href="v1/forbaska.css">v1/forbaska.css</a>
       </span>
     </div>
   </header>
 
   <main>
-    <section class="fb-section"><div class="fb-container fb-stack">
-      <p class="fb-meta">00 · Usage</p>
+    <section class="forbaska-section"><div class="forbaska-container forbaska-stack">
+      <p class="forbaska-meta">00 · Usage</p>
       <h1>Design system</h1>
-      <pre>&lt;link rel="stylesheet" href="https://forbaska.github.io/css/v1/fb.css"&gt;</pre>
+      <pre>&lt;link rel="stylesheet" href="https://forbaska.github.io/css/v1/forbaska.css"&gt;</pre>
     </div></section>
 
-    <section class="fb-section"><div class="fb-container fb-stack">
-      <p class="fb-meta">01 · Color</p>
-      <div class="fb-grid" id="colors"></div>
+    <section class="forbaska-section"><div class="forbaska-container forbaska-stack">
+      <p class="forbaska-meta">01 · Color</p>
+      <div class="forbaska-grid" id="colors"></div>
     </div></section>
 
-    <section class="fb-section"><div class="fb-container fb-stack">
-      <p class="fb-meta">02 · Type</p>
+    <section class="forbaska-section"><div class="forbaska-container forbaska-stack">
+      <p class="forbaska-meta">02 · Type</p>
       <h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3><h4>Heading 4</h4>
       <p>Body text. The quick brown fox jumps over the lazy dog. <a href="#">Link</a> and <code>code</code>.</p>
-      <p class="fb-meta">Meta · 12:30–14:00 · Label</p>
-      <p class="fb-num">0123456789 · tabular</p>
+      <p class="forbaska-meta">Meta · 12:30–14:00 · Label</p>
+      <p class="forbaska-num">0123456789 · tabular</p>
     </div></section>
 
-    <section class="fb-section"><div class="fb-container fb-stack">
-      <p class="fb-meta">03 · Buttons</p>
-      <div class="demo fb-row">
-        <button class="fb-btn fb-btn--primary">Primary</button>
-        <button class="fb-btn">Default</button>
-        <button class="fb-btn fb-btn--ghost">Ghost</button>
-        <button class="fb-btn fb-btn--danger">Danger</button>
-        <button class="fb-btn fb-btn--sm">Small</button>
-        <button class="fb-btn" disabled>Disabled</button>
+    <section class="forbaska-section"><div class="forbaska-container forbaska-stack">
+      <p class="forbaska-meta">03 · Buttons</p>
+      <div class="demo forbaska-row">
+        <button class="forbaska-btn forbaska-btn--primary">Primary</button>
+        <button class="forbaska-btn">Default</button>
+        <button class="forbaska-btn forbaska-btn--ghost">Ghost</button>
+        <button class="forbaska-btn forbaska-btn--danger">Danger</button>
+        <button class="forbaska-btn forbaska-btn--sm">Small</button>
+        <button class="forbaska-btn" disabled>Disabled</button>
       </div>
-      <pre>&lt;button class="fb-btn fb-btn--primary"&gt;Save&lt;/button&gt;</pre>
+      <pre>&lt;button class="forbaska-btn forbaska-btn--primary"&gt;Save&lt;/button&gt;</pre>
     </div></section>
 
-    <section class="fb-section"><div class="fb-container fb-stack">
-      <p class="fb-meta">04 · Forms</p>
-      <form class="demo fb-stack fb-container--narrow" style="margin:0" onsubmit="return false">
-        <div class="fb-field"><label class="fb-label" for="a">Name</label><input class="fb-input" id="a" placeholder="Placeholder"><span class="fb-hint">Helper text</span></div>
-        <div class="fb-field"><label class="fb-label" for="b">Invalid</label><input class="fb-input" id="b" aria-invalid="true" aria-describedby="be"><span class="fb-error-text" id="be">Required</span></div>
-        <div class="fb-field"><label class="fb-label" for="c">Select</label><select class="fb-select" id="c"><option>One</option><option>Two</option></select></div>
-        <div class="fb-field"><label class="fb-label" for="d">Notes</label><textarea class="fb-textarea" id="d"></textarea></div>
-        <label class="fb-check"><input type="checkbox" checked> Checkbox</label>
-        <label class="fb-check"><input type="radio" name="r" checked> Radio</label>
+    <section class="forbaska-section"><div class="forbaska-container forbaska-stack">
+      <p class="forbaska-meta">04 · Forms</p>
+      <form class="demo forbaska-stack forbaska-container--narrow" style="margin:0" onsubmit="return false">
+        <div class="forbaska-field"><label class="forbaska-label" for="a">Name</label><input class="forbaska-input" id="a" placeholder="Placeholder"><span class="forbaska-hint">Helper text</span></div>
+        <div class="forbaska-field"><label class="forbaska-label" for="b">Invalid</label><input class="forbaska-input" id="b" aria-invalid="true" aria-describedby="be"><span class="forbaska-error-text" id="be">Required</span></div>
+        <div class="forbaska-field"><label class="forbaska-label" for="c">Select</label><select class="forbaska-select" id="c"><option>One</option><option>Two</option></select></div>
+        <div class="forbaska-field"><label class="forbaska-label" for="d">Notes</label><textarea class="forbaska-textarea" id="d"></textarea></div>
+        <label class="forbaska-check"><input type="checkbox" checked> Checkbox</label>
+        <label class="forbaska-check"><input type="radio" name="r" checked> Radio</label>
       </form>
-      <pre>&lt;div class="fb-field"&gt;
-  &lt;label class="fb-label" for="name"&gt;Name&lt;/label&gt;
-  &lt;input class="fb-input" id="name"&gt;
+      <pre>&lt;div class="forbaska-field"&gt;
+  &lt;label class="forbaska-label" for="name"&gt;Name&lt;/label&gt;
+  &lt;input class="forbaska-input" id="name"&gt;
 &lt;/div&gt;</pre>
     </div></section>
 
-    <section class="fb-section"><div class="fb-container fb-stack">
-      <p class="fb-meta">05 · Card, badge, alert</p>
-      <div class="fb-grid">
-        <div class="fb-card"><h3>Card</h3><p class="fb-muted">Static.</p></div>
-        <div class="fb-card fb-card--raised"><h3>Raised</h3><p class="fb-muted">Hard shadow.</p></div>
-        <a class="fb-card" href="#"><h3>Link card</h3><p class="fb-muted">Lifts on hover.</p></a>
+    <section class="forbaska-section"><div class="forbaska-container forbaska-stack">
+      <p class="forbaska-meta">05 · Card, badge, alert</p>
+      <div class="forbaska-grid">
+        <div class="forbaska-card"><h3>Card</h3><p class="forbaska-muted">Static.</p></div>
+        <div class="forbaska-card forbaska-card--raised"><h3>Raised</h3><p class="forbaska-muted">Hard shadow.</p></div>
+        <a class="forbaska-card" href="#"><h3>Link card</h3><p class="forbaska-muted">Lifts on hover.</p></a>
       </div>
-      <div class="fb-row">
-        <span class="fb-badge">Default</span><span class="fb-badge fb-badge--accent">Accent</span>
-        <span class="fb-badge fb-badge--success">Success</span><span class="fb-badge fb-badge--warning">Warning</span>
-        <span class="fb-badge fb-badge--danger">Danger</span>
+      <div class="forbaska-row">
+        <span class="forbaska-badge">Default</span><span class="forbaska-badge forbaska-badge--accent">Accent</span>
+        <span class="forbaska-badge forbaska-badge--success">Success</span><span class="forbaska-badge forbaska-badge--warning">Warning</span>
+        <span class="forbaska-badge forbaska-badge--danger">Danger</span>
       </div>
-      <div class="fb-alert fb-alert--info">Info</div>
-      <div class="fb-alert fb-alert--success">Success</div>
-      <div class="fb-alert fb-alert--warning">Warning</div>
-      <div class="fb-alert fb-alert--danger">Danger</div>
+      <div class="forbaska-alert forbaska-alert--info">Info</div>
+      <div class="forbaska-alert forbaska-alert--success">Success</div>
+      <div class="forbaska-alert forbaska-alert--warning">Warning</div>
+      <div class="forbaska-alert forbaska-alert--danger">Danger</div>
     </div></section>
 
-    <section class="fb-section"><div class="fb-container fb-stack">
-      <p class="fb-meta">06 · Table</p>
-      <div class="fb-table-wrap"><table class="fb-table">
+    <section class="forbaska-section"><div class="forbaska-container forbaska-stack">
+      <p class="forbaska-meta">06 · Table</p>
+      <div class="forbaska-table-wrap"><table class="forbaska-table">
         <thead><tr><th>Time</th><th>Item</th><th>Status</th></tr></thead>
         <tbody>
-          <tr><td class="fb-num">09:00</td><td>Setup</td><td><span class="fb-badge fb-badge--success">Done</span></td></tr>
-          <tr><td class="fb-num">10:30</td><td>Session</td><td><span class="fb-badge">Open</span></td></tr>
-          <tr><td class="fb-num">12:00</td><td>Wrap</td><td><span class="fb-badge fb-badge--warning">Pending</span></td></tr>
+          <tr><td class="forbaska-num">09:00</td><td>Setup</td><td><span class="forbaska-badge forbaska-badge--success">Done</span></td></tr>
+          <tr><td class="forbaska-num">10:30</td><td>Session</td><td><span class="forbaska-badge">Open</span></td></tr>
+          <tr><td class="forbaska-num">12:00</td><td>Wrap</td><td><span class="forbaska-badge forbaska-badge--warning">Pending</span></td></tr>
         </tbody>
       </table></div>
     </div></section>
 
-    <section class="fb-section"><div class="fb-container fb-stack">
-      <p class="fb-meta">07 · Index list</p>
-      <ol class="fb-index">
-        <li><a href="#">First item</a><span class="fb-meta">12 entries</span></li>
-        <li><a href="#">Second item</a><span class="fb-meta">3 entries</span></li>
-        <li><a href="#">Third item</a><span class="fb-meta">Draft</span></li>
+    <section class="forbaska-section"><div class="forbaska-container forbaska-stack">
+      <p class="forbaska-meta">07 · Index list</p>
+      <ol class="forbaska-index">
+        <li><a href="#">First item</a><span class="forbaska-meta">12 entries</span></li>
+        <li><a href="#">Second item</a><span class="forbaska-meta">3 entries</span></li>
+        <li><a href="#">Third item</a><span class="forbaska-meta">Draft</span></li>
       </ol>
     </div></section>
   </main>
@@ -117,7 +117,7 @@
   <script>
     const names = ["bg","surface","surface-strong","text","text-muted","text-faint","border","border-soft","accent","accent-hover","accent-soft","success","warning","danger"];
     document.getElementById("colors").innerHTML = names.map(n =>
-      `<div class="fb-stack fb-stack--sm"><div class="swatch" style="background:var(--fb-color-${n})"></div><code>--fb-color-${n}</code></div>`).join("");
+      `<div class="forbaska-stack forbaska-stack--sm"><div class="swatch" style="background:var(--forbaska-color-${n})"></div><code>--forbaska-color-${n}</code></div>`).join("");
   </script>
 </body>
 </html>

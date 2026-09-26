@@ -1,16 +1,16 @@
-# fb.css — full reference
+# forbaska.css — full reference
 
-> Shared CSS design system for small single-page tools (forms, lists, tables, planning sheets). Plain CSS, no build step, `fb-` namespace.
+> Shared CSS design system for small single-page tools (forms, lists, tables, planning sheets). Plain CSS, no build step, `forbaska-` namespace.
 
 Do not redesign the visual language into generic Tailwind/SaaS conventions. Preserve the rough, editorial, production-oriented character even when implementing standard UI components.
 
 ## Usage
 
 ```html
-<link rel="stylesheet" href="https://forbaska.github.io/css/v1/fb.css">
+<link rel="stylesheet" href="https://forbaska.github.io/css/v1/forbaska.css">
 ```
 
-- No build step, no framework required. Use `fb-` classes and `var(--fb-*)` tokens.
+- No build step, no framework required. Use `forbaska-` classes and `var(--forbaska-*)` tokens.
 - Never hardcode colors, spacing, radius or fonts. Use tokens.
 - Do not add Tailwind, Bootstrap or other CSS frameworks alongside it.
 - Light/dark follows the system setting (`prefers-color-scheme`). Never add a manual theme that fights this, and never use hardcoded colors that break in dark mode.
@@ -21,8 +21,8 @@ Do not redesign the visual language into generic Tailwind/SaaS conventions. Pres
 - Professional, not corporate. Raw, not messy. Minimal, with clear personality. Slightly challenging. Function first: used for small tools, forms, lists, planning.
 - Clear enough that any user can use it without explanation.
 - Base is warm off-white (light) or near-black (dark). Text is near-black / off-white, never blue-grey.
-- Orange (`--fb-color-accent`) is a sparse signal color: primary action, active state, one highlight per view. Not a general theme color.
-- Hard, visible borders matter more than shadows. When shadows are used they are hard and graphic (`--fb-shadow-hard`), never soft or blurred.
+- Orange (`--forbaska-color-accent`) is a sparse signal color: primary action, active state, one highlight per view. Not a general theme color.
+- Hard, visible borders matter more than shadows. When shadows are used they are hard and graphic (`--forbaska-shadow-hard`), never soft or blurred.
 - Radius is minimal: 0–5px. Default is 0–2px.
 - Typography is compact and editorial. Big headings are tightly set. Use monospace for metadata, timecodes, labels, statuses, IDs. Use uppercase labels, small markers and numbering as visual devices.
 - Avoid: large soft cards, big border-radius, blue/purple gradients, glassmorphism, airy marketing sections, generic startup aesthetics, `rounded-xl shadow-sm bg-card` patterns.
@@ -31,19 +31,19 @@ Do not redesign the visual language into generic Tailwind/SaaS conventions. Pres
 
 ## Tokens (CSS custom properties on :root)
 
-Color: `--fb-color-bg`, `-surface`, `-surface-strong`, `-text`, `-text-muted`, `-text-faint`, `-border`, `-border-soft`, `-accent`, `-accent-hover`, `-accent-soft`, `-on-accent`, `-success`, `-warning`, `-danger`
-Font: `--fb-font-sans` (Arial Narrow stack), `--fb-font-mono`
-Font size: `--fb-font-size-xs` .75rem, `-sm` .875, `-md` 1, `-lg` 1.25, `-xl` 1.75, `-2xl` 2.5, `-3xl` 4
-Line height: `--fb-line-height-tight` .95, `-heading` 1.05, `-body` 1.45
-Weight: `--fb-font-weight-normal|medium|bold|black`
-Letter spacing: `--fb-letter-spacing-tight|normal|wide`
-Spacing: `--fb-space-1` .25rem, `-2` .5, `-3` .75, `-4` 1, `-5` 1.5, `-6` 2, `-7` 3, `-8` 4, `-9` 6
-Border: `--fb-border-width` 1px, `-strong` 2px, `-brutal` 4px
-Radius: `--fb-radius-none|sm|md|lg|pill`
-Shadow: `--fb-shadow-none`, `--fb-shadow-hard`, `--fb-shadow-hard-sm`
-Layout: `--fb-content-width` 72rem, `--fb-content-width-narrow` 48rem, `--fb-page-gutter`
-Interaction: `--fb-transition-fast` 100ms, `-medium` 180ms, `--fb-focus-ring`
-Z-index: `--fb-z-base|raised|overlay|modal`
+Color: `--forbaska-color-bg`, `-surface`, `-surface-strong`, `-text`, `-text-muted`, `-text-faint`, `-border`, `-border-soft`, `-accent`, `-accent-hover`, `-accent-soft`, `-on-accent`, `-success`, `-warning`, `-danger`
+Font: `--forbaska-font-sans` (Arial Narrow stack), `--forbaska-font-mono`
+Font size: `--forbaska-font-size-xs` .75rem, `-sm` .875, `-md` 1, `-lg` 1.25, `-xl` 1.75, `-2xl` 2.5, `-3xl` 4
+Line height: `--forbaska-line-height-tight` .95, `-heading` 1.05, `-body` 1.45
+Weight: `--forbaska-font-weight-normal|medium|bold|black`
+Letter spacing: `--forbaska-letter-spacing-tight|normal|wide`
+Spacing: `--forbaska-space-1` .25rem, `-2` .5, `-3` .75, `-4` 1, `-5` 1.5, `-6` 2, `-7` 3, `-8` 4, `-9` 6
+Border: `--forbaska-border-width` 1px, `-strong` 2px, `-brutal` 4px
+Radius: `--forbaska-radius-none|sm|md|lg|pill`
+Shadow: `--forbaska-shadow-none`, `--forbaska-shadow-hard`, `--forbaska-shadow-hard-sm`
+Layout: `--forbaska-content-width` 72rem, `--forbaska-content-width-narrow` 48rem, `--forbaska-page-gutter`
+Interaction: `--forbaska-transition-fast` 100ms, `-medium` 180ms, `--forbaska-focus-ring`
+Z-index: `--forbaska-z-base|raised|overlay|modal`
 
 ## Base styles
 
@@ -51,96 +51,96 @@ Applied to plain elements, no class needed: body (bg/text/font), `h1`–`h4` (bl
 
 ## Layout classes
 
-- `fb-container` — centered, max `--fb-content-width`, page gutters. `fb-container--narrow` for forms and reading.
-- `fb-section` — vertical padding; consecutive sections get a 2px divider.
-- `fb-stack` — vertical flex, gap 1rem. Modifiers `fb-stack--sm`, `fb-stack--lg`.
-- `fb-row` — horizontal flex, wraps, centered. Modifiers `fb-row--between`, `fb-row--end`.
-- `fb-grid` — responsive auto-fill grid, min 16rem columns.
-- `fb-header` — top bar with a 4px bottom border.
-- `fb-sr-only` — visually hidden, available to screen readers.
+- `forbaska-container` — centered, max `--forbaska-content-width`, page gutters. `forbaska-container--narrow` for forms and reading.
+- `forbaska-section` — vertical padding; consecutive sections get a 2px divider.
+- `forbaska-stack` — vertical flex, gap 1rem. Modifiers `forbaska-stack--sm`, `forbaska-stack--lg`.
+- `forbaska-row` — horizontal flex, wraps, centered. Modifiers `forbaska-row--between`, `forbaska-row--end`.
+- `forbaska-grid` — responsive auto-fill grid, min 16rem columns.
+- `forbaska-header` — top bar with a 4px bottom border.
+- `forbaska-sr-only` — visually hidden, available to screen readers.
 
 ```html
-<header class="fb-header"><div class="fb-container fb-row fb-row--between">
-  <strong>Tool name</strong><span class="fb-meta">v1 · 2026-09-26</span>
+<header class="forbaska-header"><div class="forbaska-container forbaska-row forbaska-row--between">
+  <strong>Tool name</strong><span class="forbaska-meta">v1 · 2026-09-26</span>
 </div></header>
-<main class="fb-container fb-container--narrow fb-section fb-stack fb-stack--lg">…</main>
+<main class="forbaska-container forbaska-container--narrow forbaska-section forbaska-stack forbaska-stack--lg">…</main>
 ```
 
 ## Typography classes
 
-- `fb-meta` — small uppercase mono, muted. For labels, timecodes, statuses, metadata.
-- `fb-mono` — monospace text. `fb-num` — mono with tabular numerals (times, counts, columns of numbers).
-- `fb-muted` — muted text color. `fb-accent` — accent text color (sparingly).
+- `forbaska-meta` — small uppercase mono, muted. For labels, timecodes, statuses, metadata.
+- `forbaska-mono` — monospace text. `forbaska-num` — mono with tabular numerals (times, counts, columns of numbers).
+- `forbaska-muted` — muted text color. `forbaska-accent` — accent text color (sparingly).
 
 ```html
-<p class="fb-meta">Scene 04 · 12:30–14:00</p>
+<p class="forbaska-meta">Scene 04 · 12:30–14:00</p>
 <h1>Call sheet</h1>
 ```
 
 ## Buttons
 
-`fb-btn` on `<button>` or `<a>`. Uppercase, 2px border, hard small shadow, presses down on click.
-Variants: `fb-btn--primary` (orange, one per view), `fb-btn--ghost` (no fill/shadow), `fb-btn--danger`, `fb-btn--sm`. Disable with `disabled` or `aria-disabled="true"`.
+`forbaska-btn` on `<button>` or `<a>`. Uppercase, 2px border, hard small shadow, presses down on click.
+Variants: `forbaska-btn--primary` (orange, one per view), `forbaska-btn--ghost` (no fill/shadow), `forbaska-btn--danger`, `forbaska-btn--sm`. Disable with `disabled` or `aria-disabled="true"`.
 
 ```html
-<button class="fb-btn fb-btn--primary">Save</button>
-<button class="fb-btn">Cancel</button>
-<a class="fb-btn fb-btn--ghost" href="…">Back</a>
+<button class="forbaska-btn forbaska-btn--primary">Save</button>
+<button class="forbaska-btn">Cancel</button>
+<a class="forbaska-btn forbaska-btn--ghost" href="…">Back</a>
 ```
 
 ## Forms
 
-- `fb-field` — wrapper: label, control, hint/error stacked.
-- `fb-label` — small uppercase mono label. `fb-hint` — helper text. `fb-error-text` — error message.
-- `fb-input`, `fb-select`, `fb-textarea` — square, 2px border. Mark errors with `aria-invalid="true"`.
-- `fb-check` — wraps a checkbox or radio `<input>` plus label text; custom square/round box with accent mark.
+- `forbaska-field` — wrapper: label, control, hint/error stacked.
+- `forbaska-label` — small uppercase mono label. `forbaska-hint` — helper text. `forbaska-error-text` — error message.
+- `forbaska-input`, `forbaska-select`, `forbaska-textarea` — square, 2px border. Mark errors with `aria-invalid="true"`.
+- `forbaska-check` — wraps a checkbox or radio `<input>` plus label text; custom square/round box with accent mark.
 
 ```html
-<div class="fb-field">
-  <label class="fb-label" for="name">Name</label>
-  <input class="fb-input" id="name" aria-invalid="true" aria-describedby="name-err">
-  <span class="fb-error-text" id="name-err">Required</span>
+<div class="forbaska-field">
+  <label class="forbaska-label" for="name">Name</label>
+  <input class="forbaska-input" id="name" aria-invalid="true" aria-describedby="name-err">
+  <span class="forbaska-error-text" id="name-err">Required</span>
 </div>
-<label class="fb-check"><input type="checkbox"> Confirmed</label>
+<label class="forbaska-check"><input type="checkbox"> Confirmed</label>
 ```
 
 ## Card, badge, alert
 
-- `fb-card` — surface with 2px border, small padding. `fb-card--raised` adds hard shadow. `a.fb-card` is a clickable card that lifts on hover.
-- `fb-badge` — small uppercase mono tag with border. Variants: `fb-badge--accent`, `--success`, `--warning`, `--danger`. Use for statuses.
-- `fb-alert` — block with a thick left border. Variants: `fb-alert--info` (accent), `--success`, `--warning`, `--danger`.
+- `forbaska-card` — surface with 2px border, small padding. `forbaska-card--raised` adds hard shadow. `a.forbaska-card` is a clickable card that lifts on hover.
+- `forbaska-badge` — small uppercase mono tag with border. Variants: `forbaska-badge--accent`, `--success`, `--warning`, `--danger`. Use for statuses.
+- `forbaska-alert` — block with a thick left border. Variants: `forbaska-alert--info` (accent), `--success`, `--warning`, `--danger`.
 
 ```html
-<span class="fb-badge fb-badge--success">Confirmed</span>
-<div class="fb-alert fb-alert--warning">Two people have not replied.</div>
+<span class="forbaska-badge forbaska-badge--success">Confirmed</span>
+<div class="forbaska-alert forbaska-alert--warning">Two people have not replied.</div>
 ```
 
 ## Table
 
-Wrap in `fb-table-wrap` (horizontal scroll, border) and put `fb-table` on the table. Header cells are uppercase mono. Row hover uses `--fb-color-accent-soft`. Use `fb-num` on numeric cells.
+Wrap in `forbaska-table-wrap` (horizontal scroll, border) and put `forbaska-table` on the table. Header cells are uppercase mono. Row hover uses `--forbaska-color-accent-soft`. Use `forbaska-num` on numeric cells.
 
 ```html
-<div class="fb-table-wrap"><table class="fb-table">
+<div class="forbaska-table-wrap"><table class="forbaska-table">
   <thead><tr><th>Time</th><th>Item</th><th>Status</th></tr></thead>
-  <tbody><tr><td class="fb-num">09:00</td><td>Setup</td><td><span class="fb-badge">Open</span></td></tr></tbody>
+  <tbody><tr><td class="forbaska-num">09:00</td><td>Setup</td><td><span class="forbaska-badge">Open</span></td></tr></tbody>
 </table></div>
 ```
 
 ## Index list
 
-`ol.fb-index` — auto-numbered list (01, 02, 03) with strong dividers. Each `li` is a 3-column grid: number, main content (usually a link), trailing metadata.
+`ol.forbaska-index` — auto-numbered list (01, 02, 03) with strong dividers. Each `li` is a 3-column grid: number, main content (usually a link), trailing metadata.
 
 ```html
-<ol class="fb-index">
-  <li><a href="…">Item title</a><span class="fb-meta">12 entries</span></li>
+<ol class="forbaska-index">
+  <li><a href="…">Item title</a><span class="forbaska-meta">12 entries</span></li>
 </ol>
 ```
 
 ## Checklist for a new page
 
 1. `<meta name="viewport" content="width=device-width, initial-scale=1">` and the stylesheet link.
-2. Content in `fb-container` / `fb-section`; layout with `fb-stack`, `fb-row`, `fb-grid`.
-3. Only one `fb-btn--primary` per view. Orange elsewhere is rare.
-4. Labels for every input; errors via `aria-invalid` plus `fb-error-text`.
+2. Content in `forbaska-container` / `forbaska-section`; layout with `forbaska-stack`, `forbaska-row`, `forbaska-grid`.
+3. Only one `forbaska-btn--primary` per view. Orange elsewhere is rare.
+4. Labels for every input; errors via `aria-invalid` plus `forbaska-error-text`.
 5. Check both light and dark, keyboard focus and a phone-width viewport.
 6. No hardcoded colors, no soft shadows, no radius above 5px.
